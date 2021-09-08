@@ -34,6 +34,13 @@ function setup()
 function draw() {
   if (hizoClick == true)
   {
+    if (mouseButton == LEFT) {
+      if (tieneMinaCasillero(columnaPresionada, filaPresionada)) {
+        perder()
+        }
+    
+    } 
+   
     pintarCasillero(columnaPresionada, filaPresionada, COLOR_CASILLERO_SIN_MINA); //pinta el casillero clickeado. Modificar/completar
 
 
@@ -50,6 +57,7 @@ function ganoElJuego()
 
 function ponerMinasTablero()
 {
+  ponerMinasTablero(2,5);
   // Modificar/completar
 }
 
